@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.back {
+    height:100%;
+    width:100%;
+    
+
+}
+.image {
+    position:absolute;
+    top: 2px;
+    border-style:hidden;
+    height:150px;
+    width:200px;
+
+}
+
+.login h1 {
+    position:absolute;
+    top:200px;
+    font-family:'Times New Roman', Times, serif;
+}
+.form {
+    position:absolute;
+    bottom:220px;
+    font-family:'Times New Roman', Times, serif;
+}
+.login {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width:25%;
+    background-color:blurred;
+    border-radius:0px 50px;
+    position:absolute;
+    top:10%;
+    left:33%;
+    border-color:black;
+    border-style:ridge;
+    animation-name:trasform;
+    animation-duration:2s;
+    animation-delay:0s;
+    
+}
+.button {
+    background-color: rgb(236, 186, 125);
+    align-items: center;
+    position:absolute;
+    left:100px;
+    size-adjust:inherit;
+    border-style:groove;
+    height: 35px;
+    width:80px;
+    border-radius:20px;
+    border-color:rgb(236, 186, 125);
+    
+    }
+.button:hover{
+    background-color:rgb(236, 186, 125);
+    transform:translate(-5px);
+    border-radius: 10px;
+}
+.login p {
+    position:absolute;
+    bottom:100px;
+
+}
+@keyframes trasform{
+    from{
+       position:absolute;
+       top:5px;
+    }
+    to{
+       position:absolute;
+       top:10%;
+    }
+}

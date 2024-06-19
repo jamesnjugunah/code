@@ -1,0 +1,257 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Sidebar*/
+.user_img {
+    width:50px;
+    border-radius: 100%;
+    border: 1px solid white;
+}
+.sidebar {
+    position:absolute;
+    top:0px;
+    left:opx;
+    height:100vh;
+    width:80px;
+    background-color: #12171e;
+    padding: 0.4rem 0.8rem;
+    transition: all 0.5s ease;
+}
+.sidebar.active ~ .main-content {
+    left:250px;
+    width: calc(100% - 250px);  
+}
+.sidebar.active {
+    width:250px;
+}
+.sidebar #btn {
+    position:absolute;
+    top: 0.4rem;
+    left:50%;
+    color:white;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform:translateX(-50%);
+    cursor:pointer;
+
+}
+.sidebar.active #btn {
+    left:90%;
+}
+.sidebar .top .title {
+    color:white;
+    display:flex;
+    height:50px;    
+    width:100%;
+    align-items: center;
+    pointer-events: none;
+    opacity:0;
+}
+.sidebar.active .top .title {
+    opacity:1;
+}
+.user {
+    display:flex;
+    margin: 1rem 0;
+    align-items: center;
+
+}
+.user p {
+    margin-left: 1rem;
+    color:white;
+    opacity:1;
+
+}
+.bold {
+    font-weight: 600;
+}
+.sidebar p {
+    opacity:0;
+}
+.sidebar.active p {
+    opacity:1;
+}
+.nav_links {
+    padding-left: 20px;;
+}
+.sidebar ul li {
+    position:relative;
+    list-style-type: none;
+    margin:1.6rem auto;
+    width:90%;
+    height:50px;
+    line-height:50px;
+
+}
+.sidebar ul li a {
+    color:white;
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+
+}
+
+.sidebar ul li a:hover {
+    background-color: white;
+    color: #12171e;
+}
+.sidebar ul li a i {
+    line-height: 50px;
+    min-width: 50px;
+    align-items: center;
+    border-radius:12px;
+    height:50px;
+
+}
+.sidebar .link_names {
+    opacity:0;
+
+}
+.sidebar.active .link_names {
+    opacity:1;
+}
+.sidebar ul li .tool_tip {
+    position:absolute;
+    left:60px;
+    top:0%;
+    transform:translate (-50%, -50%);
+    box-shadow: 0 0.5rem 0.8rem rgba(0,0,0,0.2);;
+    border-radius:0.6rem;
+    padding: 0.4rem 1.2rem;
+     line-height: 1.8rem;
+     z-index: 20;
+     opacity:0;
+
+}
+
+.sidebar ul li:hover .tool_tip {
+    opacity:1;
+}
+.sidebar.active ul li:hover .tool_tip {
+    opacity:0;
+}
+
+.main-content {
+    position:absolute;
+    height: 100vh;
+    top:0px;
+    left:80px;
+    transition:all 0.5s ease;
+    background-color: #eee;
+    padding: 1rem;
+    width: calc(100% - 80px);
+}
+.sidebar .feed a {
+    opacity:0;
+    text-decoration:none;
+    position:absolute;
+    left:75px;
+    bottom:60px;
+    align-items:center;
+    color:white;
+
+}
+.sidebar .Terms a {
+    opacity:0;
+    text-decoration:none;
+    position:absolute;
+    left:40px;
+    bottom:30px;
+    color:white;
+    
+}
+.sidebar.active .feed a {
+    opacity:1;
+}
+.sidebar.active .Terms a {
+    opacity:1;
+}
+
+/* top bar */
+.container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #12171e;
+    border-radius: 30px;
+    color:white;
+    padding:10px 10px 10px 10px;
+    
+
+
+
+}
+.creat {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    padding: 10px 10px 10px 10px;
+    border-color: aquamarine;
+    position:absolute;
+    left:50px;
+    top:130px;
+}
+.butt {
+    background-color: green;
+    width:150px;
+    height:40px;
+    border-radius: 10px;
+    color:black;
+    font-size: larger;
+    font-weight: bold;
+}
+.butt:hover {
+    transform:translateX(-2px);
+}
+#search {
+    width:80%;
+    height:35px;
+}
+.nav {
+    display:flex;
+    width:50%;
+    height:30px;
+    background-color: grey;
+    color:white;
+    border-radius:10px;
+    position:absolute;
+    top:220px;
+    left:70px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    box-shadow:10px 10px;
+   
+}
+.nav p:hover {
+    color:black;
+    cursor:pointer;
+    transform:translateX(5px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

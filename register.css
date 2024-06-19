@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+.body {
+    background-image: url("images/gud.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Register {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width:35%;
+    background-color:blurred;
+    border-radius:0px 50px ;
+    position:absolute;
+    top:5%;
+    left:33%;
+    border-color:black;
+    border-style:ridge;
+    animation-name: transform;
+    animation-duration:3s;
+    animation-delay:0s;
+}
+.logo{
+    position:absolute;
+    top:2px;
+    border-style:hidden;
+    height:150px;
+    width:200px;
+
+
+}
+.Register h1{
+    position:absolute;
+    top:180px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.form {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    position:absolute;
+    left:55px;
+    top:250px;
+
+
+}
+.button {
+    background-color: rgb(236, 186, 125);
+    align-items: center;
+    position:absolute;
+    left:100px;
+    size-adjust:inherit;
+    border-style:groove;
+    height: 30px;
+    width:80px;
+    border-radius:20px;
+    border-color:rgb(238, 176, 100);
+    
+    }
+.button:hover{
+    background-color: rgb(231, 159, 70);
+    align-items: center;
+    size-adjust:inherit;
+    border-style:groove;
+    border-radius:10px;
+    border-color:rgb(236, 186, 125);
+    transform:translate(-5px);
+
+}
+.form input {
+    position:absolute;
+    left:200px;
+    font-family:'Times New Roman', Times, serif;
+}
+.Register p {
+    position:absolute;
+    bottom:80px;
+    font-family:'Times New Roman', Times, serif;
+}
+@keyframes transform {
+    0%{
+        position:absolute;
+        top:0%;
+        left:0%;
+    }
+    100%{
+        position:absolute;
+        top:5%;
+        left:33%;
+    }
+}

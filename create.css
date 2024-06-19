@@ -1,0 +1,63 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body {
+    background-image: url('images/timer.jpg');
+    background-size: cover;
+}
+
+.form {
+    width: 500px;
+    height:500px;
+    background: #12171e;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    box-shadow: 20px 10px;
+}
+.form h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form .fom label {
+    color:white;
+    position:absolute;
+    left:40%;
+    align-items: left;
+    margin-bottom: 10px;
+}
+.form .fom input {
+    color:black;
+    position:absolute;
+    left:50%;
+    align-items: left;
+    margin-bottom: 10px;
+}
+.fom {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.button {
+    background-color:green;
+    color:black;
+    width:90px;
+    height:40px;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: bold;
+}
+.button:hover {
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+.info{
+    margin-bottom: 30px;
+}
